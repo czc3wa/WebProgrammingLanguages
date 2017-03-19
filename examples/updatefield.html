@@ -1,0 +1,116 @@
+
+<!doctype html public "-//w3c//dtd html 3.2//en">
+
+<html>
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>CS 4640 (Programming Languages for Web Applications)</title>
+
+    <style>
+      a:hover
+      {
+        background-color:yellow;
+      }       
+    </style>
+
+   <script type="text/javascript">
+     <!--  // Hide script from old browsers 
+      
+     function setFocus() {
+      	document.userInfo.username.focus();
+    	 
+     }
+
+     function ChangeFieldByName(name) {
+     	document.userInfo.username.value = name;
+    	 
+     }
+     
+     function ChangeFieldById(name) {
+     	document.getElementById("username").value = name;
+    	 
+     }
+     
+     function ChangeFieldByPosition(name) {
+     	document.forms[0].elements[0].value = name;
+    	 
+     } 
+
+     function update_screen(signin_as) {
+     
+      document.userInfo.Signin_option.value = signin_as;
+      if (signin_as == "return_user")
+        document.getElementById("cofm_row").style.visibility = "hidden";
+      else 
+        document.getElementById("cofm_row").style.visibility = "visible";
+     
+     // end script hiding -->
+   </script>
+   
+</head>
+
+<body onload="setFocus()">
+  <center>
+    <h2>Form and JS</h2>  
+  </center>
+  
+  <br />
+  
+  <center>
+  <form name="userInfo" >
+    <table>
+      <tr>
+        <td><label>User name:</label></td>
+        <td><input type="text" name="username" id="username" value="user name" /></td>
+        <td><input type="button" name="newuser" value="New User" onClick="update_screen('new_user')"></td>
+
+      </tr>
+      <tr>
+        <td><label>Password:</label></td>
+        <td><input type="text" name="password" value="" /></td>
+      </tr>
+      <tr id="cofm_row" style="visibility:hidden">
+        <td><label>Confirm Password:</label></td>
+        <td><input type="text" name="confirm_password" value="" id="cofm_row"/></td>
+      </tr>
+    </table>
+
+    
+  </form>
+  
+    <br />
+  
+    <table cellpadding=5 cellspacing=2 >
+      <tr>
+        <td>Event handling: <code><font color="red">onmouseover</font></code> &nbsp; on links</td>
+        <td><a href="updatefield.html" onmouseover="ChangeFieldByName('Jack')"
+            onmouseout="ChangeFieldByName('name')">
+            Jack</a>
+        </td>  
+        <td><a href="updatefield.html" onmouseover="ChangeFieldById('Mary')"    
+        	onmouseout="ChangeFieldById('name')">  
+            Mary</a>
+        </td>
+        <td><a href="updatefield.html" onmouseover="ChangeFieldByPosition('Mike')"    
+        	onmouseout="ChangeFieldByPosition('default value')">       
+            Mike</a>
+        </td> 
+      </tr>
+      <tr>
+        <td>Event handling: <code><font color="red">onclick</font></code> &nbsp; on buttons</td>
+        <td><button onclick="ChangeFieldByName('Jack')">Jack</button></td>  
+        <td><button onclick="ChangeFieldById('Mary')">Mary</button></td>
+        <td><button onclick="ChangeFieldByPosition('Mike')">Mike</button></td> 
+      </tr>
+    </table>
+
+    <inpit
+
+    <input type="hidden" value="Signin_option" value="return_user">    
+    <br />
+    
+  </center>
+ 
+</body>
+</html>

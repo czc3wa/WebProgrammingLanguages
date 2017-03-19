@@ -1,0 +1,117 @@
+<!doctype html>  
+  <html>  
+    <head> 
+      <meta charset="UTF-8"> 
+      <!-- <meta http-equiv="refresh" content=5; url="coreychen.html"/> -->
+      <title>In class exercise 2</title>  
+      <!-- this is a comment: browser does not render the head element -->  
+
+      <!-- inline style sheet has higher priority over document level
+      document level has higher priority over xternal style sheets -->
+      <style>
+        h1 {
+          color: green;
+        }
+        body {
+          font-family: "Times New Roman";
+          background-color: #76EE00;
+        }
+        #personalInfo {
+          /*//color: #76EE00;*/
+          background-color: #BCED91;
+        }
+        #textArea {
+          /*//color: #76EE00;*/
+          background-color: #BCED91;
+        }
+        #ebay {
+          background-color: #76EE00;
+        }
+
+        .suggestions {
+               display: inline-block;
+          }
+
+      </style>
+    
+
+      <script type="text/javascript">
+        function changeImageMuskie2() {
+          document.getElementById("turtle").src="images/muskie2.jpg";
+        }
+
+        function changeImageMuskie() {
+          document.getElementById("turtle").src="images/muskie.jpg";
+        }
+      </script>
+      <!-- external style sheet -->
+      <!-- <link rel="stylesheet" type="text/css" href="inclass30.css">  -->                     
+    </head>
+    <!-- inline style sheet-->
+    <!-- <body style="background-color: yellow;"> -->
+    <body >
+      <h1 align="center">
+          Corey Chen
+      </h1>
+      <br/>
+      <center>
+        <img src="images/muskie.jpg" width="40%" height="40%" id="turtle" onmouseover="changeImageMuskie2()" onmouseout="changeImageMuskie()" />
+        <br/>
+        <img src="images/CharizardGIMP.png" width="50%" height="50%" id="charizard"/>
+                <img src="images/pokemonAnniversary.png" width="100%" height="100%" id="charizard"/>
+
+      </center>
+      <br/>
+      <center>
+      <a href="https://github.com/czc3wa?tab=repositories"><b>My Github Profile</b></a>
+      <br/>
+      <p>
+        <img src="images/ebay.png" width="10%" height="10%" id="ebay">
+        <a href="http://www.ebay.com/usr/crushercards"><b>Check out my Ebay store!</b></a>
+        <img src="images/ebay.png" width="10%" height="10%" id="ebay">
+      </p>
+      <br/>
+      <table border="1" cellspacing="2" cellpadding="5" width="40%"> 
+        <tr>      
+          <th>Name</th> 
+          <td align="center">Corey Chen</td>        
+        </tr> 
+        <tr> 
+          <th>Email</th> 
+          <td align="center">czc3wa@virginia.edu</td>
+        </tr> 
+        <tr>
+           <th>Phone Number</th>
+           <td align="center">703-517-9363</td> 
+        </tr>
+      </table>
+      <br/>
+      <font size="5">Let's keep in touch!</font>
+      <br/>
+      <fieldset class="suggestions"> 
+        <legend> 
+          Contact Information 
+        </legend> 
+        <form action="mailto:czc3wa@virginia.edu" method="post" enctype="text/plain"> 
+          Name: <input type="text" name="Name" id="personalInfo"> 
+          EMail: <input type="text" name="EMail" id="personalInfo"> 
+          Phone: <input type="text" name="Phone" maxlength="12" size="12" id="personalInfo"> 
+          <br/>
+          <br/>
+          Website Suggestions: 
+          <br/>                    
+        </form> 
+      </fieldset> 
+      <br/>
+      <br/>
+      <br/>
+      <input type="radio" name="website" value="awesome" checked> This website is awesome! :D
+      <br/>
+      <input type="radio" name="website" value="sucks"> 
+      This website sucks! :(
+      </center>
+
+      <form action= "corey.html"
+
+    </body>
+  </html>  
